@@ -25,8 +25,20 @@ route::get('exit',[EmployeesController::class,'exit'])->name('exitnomina');
 
 
 route::get('vb',[EmployeesController::class,'vb'])->name('vb');
-route::get('view1',[EmployeesController::class,'view1'])->name('view1');
-route::get('view2',[EmployeesController::class,'view2'])->name('view2');
+route::get('upemployee',[EmployeesController::class,'upemployee'])->name('upemployee');
+route::post('saveemployee',[EmployeesController::class,'saveemployee'])->name('saveemployee');
+
+route::get('eloquent',[EmployeesController::class,'eloquent'])->name('eloquent');
+
+
+
+
+
+
+
+
+
+
 
 
 Route::get('/', function () {
